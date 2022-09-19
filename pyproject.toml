@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lich_hofmetyl"
+version = "0.0.1"
+authors = [
+  { name="Tyler Hofmeister", email="tyler.hofmeister@gmail.com" },
+]
+description = "A simplified git api which handles encrypting files before uploading them to git, as well as decrypting the same files after pulling/cloning, using a password"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "git",
+  "logging",
+  "crypto_hofmetyl"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tylerhof/lich"
+"Bug Tracker" = "https://github.com/tylerhof/lich/issues"
